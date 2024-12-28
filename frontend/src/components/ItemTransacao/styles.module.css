@@ -1,0 +1,51 @@
+.containerItemLeftTransacoes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: max-content;
+}
+.containerItemRightTransacoes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: max-content;
+}
+.listItemTransacoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 10px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.listItemTransacoes:hover {
+  background-color: #f0f0f0a9;
+}
+.iconMetodoTransacao {
+  width: 36px;
+  height: 36px;
+  background-color: #9e77ed44;
+  color: #9e77ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.infoTransacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.nomeTransacao {
+  font-size: 14px;
+  font-weight: 600;
+}
+.dataTransacao {
+  font-size: 12px;
+}
+.valueTransacao {
+  font-size: 14px;
+  font-weight: 600;
+}

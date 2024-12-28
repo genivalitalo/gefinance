@@ -1,0 +1,330 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.containerDashboard {
+  display: grid;
+  grid-template-columns: repeat(12, 110px);
+  grid-template-rows: repeat(10, 50px);
+  height: 400px;
+  /* background-color: rgb(145, 145, 145); */
+  margin: 0 auto;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.chartSaldo {
+  grid-column: span 9;
+  grid-row: span 3;
+  border: solid #c5c5c5 1px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
+.valueChartSaldo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.chartTransacoes {
+  grid-column: span 3;
+  grid-row: span 10;
+  border: solid #c5c5c5 1px;
+  border-radius: 10px;
+}
+.chartInvestimentos {
+  width: 100%;
+  border: solid #c5c5c5 1px;
+  border-radius: 10px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.chartReceita {
+  width: 100%;
+  border: solid #c5c5c5 1px;
+  border-radius: 10px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.chartDespesas {
+  width: 100%;
+  border: solid #c5c5c5 1px;
+  border-radius: 10px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.chartCategorias1 {
+  grid-column: span 3;
+  grid-row: span 5;
+  border: solid #c5c5c5 1px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.chartCategorias2 {
+  grid-column: span 6;
+  grid-row: span 5;
+  border: solid #c5c5c5 1px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.headerChartSaldo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: max-content;
+  gap: 10px;
+}
+.headerChartTransacao {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: max-content;
+  gap: 10px;
+}
+.headerChartTransacao1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: max-content;
+  border-bottom: solid #c5c5c5 1px;
+  padding: 20px;
+}
+.containerIconeChart {
+  width: 36px;
+  height: 36px;
+  background-color: #9e77ed;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.containerIconeChartInvestimento {
+  width: 36px;
+  height: 36px;
+  background-color: #55b02e44;
+  color: #55b02e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.containerIconeChartDespesas {
+  width: 36px;
+  height: 36px;
+  background-color: #f6352e44;
+  color: #f6352e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.nomeChart {
+  font-size: 16px;
+  font-weight: 500;
+  color: #535862;
+}
+.infoValueChart {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.valuesCharts {
+  font-size: 36px;
+  color: #535862;
+  font-weight: 600;
+}
+.valuesChartsInvestimento {
+  font-size: 24px;
+  color: #535862;
+  font-weight: 600;
+}
+.buttonHidenValues {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: none;
+  background: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  color: #535862;
+}
+.buttonHidenValues:hover {
+  background-color: #f0f0f0;
+}
+.linkRedirec {
+  padding: 8px 14px;
+  border: solid #c5c5c5 1px;
+  border-radius: 8px;
+  color: #535862;
+  transition: all 0.2s ease-in-out;
+}
+.linkRedirec:hover {
+  background-color: #f0f0f0;
+}
+.flexCategorias {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 8px;
+}
+.flexCategoriasInvestimentos {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.iconCategoriaInvestimento {
+  color: #9e77ed;
+}
+.iconCategoriaReceita {
+  color: #55b02e;
+}
+.iconCategoriaDespesas {
+  color: #f6352e;
+}
+.flexCategoriasReceita {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.flexCategoriasDespesas {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nomeChartCategorias {
+  font-size: 14px;
+}
+.containerListTransacoes {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.containerItemLeftTransacoes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: max-content;
+}
+.containerItemRightTransacoes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: max-content;
+}
+.listItemTransacoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 10px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.listItemTransacoes:hover {
+  background-color: #f0f0f0a9;
+}
+.iconMetodoTransacao {
+  width: 36px;
+  height: 36px;
+  background-color: #9e77ed44;
+  color: #9e77ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.infoTransacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.nomeTransacao {
+  font-size: 14px;
+  font-weight: 600;
+}
+.dataTransacao {
+  font-size: 12px;
+}
+.valueTransacao {
+  font-size: 14px;
+  font-weight: 600;
+}
+.miniCharts {
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  gap: 10px;
+  grid-column: span 9;
+  grid-row: span 2;
+}
+@media (max-width: 1440px) {
+  .containerDashboard {
+    transition: all 0.3s ease-in-out;
+    grid-template-columns: repeat(10, 110px);
+  }
+  .chartSaldo {
+    transition: all 0.3s ease-in-out;
+    grid-column: span 6;
+  }
+  .chartTransacoes {
+    transition: all 0.3s ease-in-out;
+    grid-column: span 4;
+  }
+  .miniCharts {
+    transition: all 0.3s ease-in-out;
+    grid-column: span 6;
+  }
+  .chartCategorias1 {
+    transition: all 0.3s ease-in-out;
+    grid-column: span 6;
+  }
+  .chartCategorias2 {
+    transition: all 0.3s ease-in-out;
+    grid-column: span 10;
+  }
+}
+@media (max-width: 1200px) {
+  .containerDashboard {
+    transition: all 0.3s ease-in-out;
+    grid-template-columns: repeat(8, 110px);
+  }
+  .chartSaldo {
+    transition: all 0.3s ease-in-out;
+    grid-column: span 5;
+  }
+  .chartTransacoes {
+    transition: all 0.3s ease-in-out;
+    grid-column: span 3;
+  }
+  .miniCharts {
+    transition: all 0.3s ease-in-out;
+    grid-column: span 5;
+  }
+  .chartCategorias1 {
+    transition: all 0.3s ease-in-out;
+    grid-column: span 5;
+  }
+  .chartCategorias2 {
+    transition: all 0.3s ease-in-out;
+    grid-column: span 8;
+  }
+}

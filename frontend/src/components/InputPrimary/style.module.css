@@ -1,0 +1,21 @@
+.input {
+    height: 44px;
+    border-radius: 8px;
+    width: 320px;
+    border: solid #D5D7DA 0.8px;
+    background-color: none;
+    padding: 10px;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+    
+}
+.input:hover {
+    transition: all .2s ease-in-out;
+    border: solid #9E77ED 0.8px;
+}
+.input:focus {
+    outline: 0.8px solid #9E77ED; /* Define espessura, estilo e cor */
+}
+
+
+    
