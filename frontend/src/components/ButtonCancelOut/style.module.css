@@ -5,12 +5,14 @@
   font-weight: 500;
   transition: all 0.2s ease-in-out;
   border: none;
-  background-color: #9e77ed;
-  color: white;
+  color: #9e77ed;
   cursor: pointer;
   padding: 8px 14px;
+  border: solid 1px #9e77ed;
+  background: none;
 }
 .button:hover {
   transition: all 0.2s ease-in-out;
   background-color: #9566f3;
+  color: white;
 }

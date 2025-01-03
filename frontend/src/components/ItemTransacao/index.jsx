@@ -5,9 +5,10 @@ export default function ItemTransacao({
   dataTransacao,
   icon: Icon,
   valorTransacao,
+  onClick
 }) {
   return (
-    <div className={styles.listItemTransacoes}>
+    <div className={styles.listItemTransacoes} onClick={onClick}>
       <div className={styles.containerItemLeftTransacoes}>
         <div className={styles.iconMetodoTransacao}>{Icon && <Icon />}</div>
         <div className={styles.infoTransacoes}>
@@ -16,7 +17,7 @@ export default function ItemTransacao({
         </div>
       </div>
       <div className={styles.containerItemRightTransacoes}>
-        <p className={styles.valueTransacao}>R$ {valorTransacao}</p>
+        <p className={styles.valueTransacao}>{valorTransacao}</p>
       </div>
     </div>
   );

@@ -1,0 +1,48 @@
+.containerPopup {
+  width: 350px;
+  height: max-content;
+  border-radius: 14px;
+  padding: 20px;
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.containerHeaderPopup {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.containerBodyPopup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.nomePopup {
+  color: #535862;
+}
+.descricaoPopup {
+  font-size: 14px;
+  color: #535862;
+}
+.cardInput {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #535862;
+}
+.containerFooterPopup {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}

@@ -22,19 +22,16 @@ export default function Cadastro() {
         email,
         password,
       });
-      navigate('/dashboard')
+      navigate("/dashboard");
     } catch (error) {
-      console.log(
-        "Error fazer login",
-        error.response?.data || error.message
-      );
+      console.log("Error fazer login", error.response?.data || error.message);
       alert(error.response?.data.error || "Erro ao cadastrar usuário");
     }
   };
   return (
     <div className={style.container}>
       <div className={style.containerAllForm}>
-        <h2 className={style.logo}>GeFinance</h2> 
+        <h2 className={style.logo}>GeFinance</h2>
         <div className={style.containerInfoCadastro}>
           <h2 className={style.h2Cadastro}>Login</h2>
           <p className={style.pCadastro}>
@@ -46,13 +43,23 @@ export default function Cadastro() {
             <label htmlFor="nome" className={style.labelStyle}>
               Email
             </label>
-            <InputPrimary placeholder={"Digite seu email"} type={"email"} value={email} onChange={(e) => setEmail(e.target.value)}/>
+            <InputPrimary
+              placeholder={"Digite seu email"}
+              type={"email"}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </div>
           <div className={style.cardInput}>
             <label htmlFor="nome" className={style.labelStyle}>
               Senha
             </label>
-            <InputPrimary placeholder={"Digite sua senha"} type={"password"} value={password} onChange={(e) => setPassword(e.target.value)} />
+            <InputPrimary
+              placeholder={"Digite sua senha"}
+              type={"password"}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
           </div>
           <ButtonPrimary nome={"Entrar"} type={"submit"} />
         </form>

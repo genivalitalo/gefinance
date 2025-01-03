@@ -13,3 +13,13 @@ model User {
   password String
   idade Int?
 }
+model Transacoes {
+  id              Int      @id @default(autoincrement())
+    nome_transacao  String
+    valor           Float
+    tipo_transacao  String
+    pagamento       String
+    descricao       String?
+    data            String
+    createdAt       DateTime @default(now())
+}

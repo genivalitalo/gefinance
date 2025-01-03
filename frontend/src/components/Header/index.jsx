@@ -27,7 +27,7 @@ export default function Header() {
             </li>
             <li className={style.linkHeader}>
               <LuList size={20} />
-              <a href="/transacoes" className={style.link}>
+              <a href="/transac" className={style.link}>
                 Transações
               </a>
             </li>
