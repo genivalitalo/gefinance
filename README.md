@@ -40,3 +40,8 @@ Este é um **mini sistema financeiro de código aberto**, desenvolvido para apri
    ```bash
    git clone https://github.com/seu-usuario/seu-repositorio.git
    cd seu-repositorio/backend
+
+### Instalção das Dependencias:
+```bash
+npm install
+
