@@ -45,3 +45,9 @@ Este é um **mini sistema financeiro de código aberto**, desenvolvido para apri
 ```bash
 npm install
 
+DATABASE_URL="postgresql://seu-usuario:senha@localhost:5432/nome_do_banco"
+npx prisma migrate dev
+npm install
+VITE_API_URL="http://localhost:3000"
+npm run dev
+
